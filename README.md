@@ -3,6 +3,6 @@ This is a simple Python program that polls the Morpheus health API to retrieve i
 
 Feel free to use it as a template because I know it is not perfect (I am no expert or developer) and only shows you a fraction of what the Morpheus API can do. Ideally, you would be performing some processing on the JSON data returned from the API call but I've kept this as simple as possible. 
 
-**Useful:** 
+**Useful links:** 
 - [https://apidocs.morpheusdata.com/docs](https://apidocs.morpheusdata.com/docs)
 - [https://morpheusdata.com/](https://morpheusdata.com/)
