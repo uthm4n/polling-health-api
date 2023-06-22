@@ -13,7 +13,7 @@ try:
         url = f"https://{morpheus_node}/api/health"        # node = the hostname of your appliance node. In a HA environment, you have multiple nodes so you can specify here which one you want to retrieve the health for. You can provide the hostname or IP address when prompted for input 
         headers = {
             "accept": "application/json",
-            "authorization": f"Bearer {morph_api_key}"             # replace me with your API token - this can be generated on your appliance (Navigate to https://{YOUR-MORPHEUS-APPLIANCE-URL}/user-settings > API Access > Actions > morph-api > Regenerate) or read https://apidocs.morpheusdata.com/reference/updateusersettingsaccesstoken
+            "authorization": f"Bearer {morph_api_key}"            # make sure an API token is generated for morph-api on your appliance (Navigate to https://{YOUR-MORPHEUS-APPLIANCE-URL}/user-settings > API Access > Actions > morph-api > Regenerate) or read https://apidocs.morpheusdata.com/reference/updateusersettingsaccesstoken
             }
         response = requests.get(url, headers=headers, verify=False)
         string = response.json()
