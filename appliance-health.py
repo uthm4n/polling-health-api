@@ -5,10 +5,11 @@ import sys
 import json
 
 polling_interval = input('How frequently (in seconds) would you like the API call to run?')
+morpheus_node = input('Which Morpheus node would you like to get the health for?')
 
 try:
     while True:
-        url = "https://{YOUR-MORPHEUS-APPLIANCE-URL}/api/health"        # replace me with your Morpheus appliance URL (https://docs.morpheusdata.com/en/latest/getting_started/appliance_setup/appliance_setup.html)
+        url = f"https://{morpheus_node}/api/health"        # node = the hostname of your appliance node. In a HA environment, you have multiple nodes so you can specify here which one you want to retrieve the health for
         headers = {
             "accept": "application/json",
             "authorization": "Bearer {YOUR-API-TOKEN-HERE}"             # replace me with your API token - this can be generated on your appliance (Navigate to https://{YOUR-MORPHEUS-APPLIANCE-URL}/user-settings > API Access > Actions > morph-api > Regenerate) or read https://apidocs.morpheusdata.com/reference/updateusersettingsaccesstoken
