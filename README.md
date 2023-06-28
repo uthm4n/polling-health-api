@@ -6,3 +6,5 @@ Feel free to use it as a template because I know it is not perfect (I am no expe
 **Useful links:** 
 - [https://apidocs.morpheusdata.com/docs](https://apidocs.morpheusdata.com/docs)
 - [https://morpheusdata.com/](https://morpheusdata.com/)
+
+Covered under the [Morpheus Open Source Code Policy](https://support.morpheusdata.com/s/article/Morpheus-Open-Source-Code-Support-Policy?language=en_US)
